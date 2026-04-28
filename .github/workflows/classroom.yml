@@ -44,7 +44,7 @@ jobs:
         id: ej01
         uses: classroom-resources/autograding-command-grader@v1
         with:
-          test-name: "Ej01 — Pipeline filter/map/reduce"
+          test-name: "Ej01 — Pipeline filter/map/reduce (TS)"
           command: "cd typescript && npx vitest run tests/ej01.test.ts"
           timeout: "10"
           max-score: "5"
@@ -53,7 +53,7 @@ jobs:
         id: ej02
         uses: classroom-resources/autograding-command-grader@v1
         with:
-          test-name: "Ej02 — Composición pipe/compose"
+          test-name: "Ej02 — Composición pipe/compose (TS)"
           command: "cd typescript && npx vitest run tests/ej02.test.ts"
           timeout: "10"
           max-score: "6"
@@ -62,7 +62,7 @@ jobs:
         id: ej03
         uses: classroom-resources/autograding-command-grader@v1
         with:
-          test-name: "Ej03 — Inmutabilidad con spread"
+          test-name: "Ej03 — Inmutabilidad con spread (TS)"
           command: "cd typescript && npx vitest run tests/ej03.test.ts"
           timeout: "10"
           max-score: "4"
@@ -71,7 +71,7 @@ jobs:
         id: ej05
         uses: classroom-resources/autograding-command-grader@v1
         with:
-          test-name: "Ej05 — flatMap y reduce"
+          test-name: "Ej05 — flatMap y reduce (TS)"
           command: "cd typescript && npx vitest run tests/ej05.test.ts"
           timeout: "10"
           max-score: "5"
@@ -80,7 +80,7 @@ jobs:
         id: ej06
         uses: classroom-resources/autograding-command-grader@v1
         with:
-          test-name: "Ej06 — Partial application"
+          test-name: "Ej06 — Partial application (TS)"
           command: "cd typescript && npx vitest run tests/ej06.test.ts"
           timeout: "10"
           max-score: "6"
@@ -89,7 +89,7 @@ jobs:
         id: ej08
         uses: classroom-resources/autograding-command-grader@v1
         with:
-          test-name: "Ej08 — Currying"
+          test-name: "Ej08 — Currying (TS)"
           command: "cd typescript && npx vitest run tests/ej08.test.ts"
           timeout: "10"
           max-score: "6"
@@ -98,7 +98,7 @@ jobs:
         id: ej10
         uses: classroom-resources/autograding-command-grader@v1
         with:
-          test-name: "Ej10 — Result y validación"
+          test-name: "Ej10 — Result y validación (TS)"
           command: "cd typescript && npx vitest run tests/ej10.test.ts"
           timeout: "10"
           max-score: "7"
@@ -107,7 +107,7 @@ jobs:
         id: ej11
         uses: classroom-resources/autograding-command-grader@v1
         with:
-          test-name: "Ej11 — Middleware como HOF"
+          test-name: "Ej11 — Middleware como HOF (TS)"
           command: "cd typescript && npx vitest run tests/ej11.test.ts"
           timeout: "10"
           max-score: "6"
@@ -116,7 +116,7 @@ jobs:
         id: ej13
         uses: classroom-resources/autograding-command-grader@v1
         with:
-          test-name: "Ej13 — Recursión de cola TS"
+          test-name: "Ej13 — Recursión de cola (TS)"
           command: "cd typescript && npx vitest run tests/ej13.test.ts"
           timeout: "10"
           max-score: "5"
@@ -125,7 +125,7 @@ jobs:
         id: ej14
         uses: classroom-resources/autograding-command-grader@v1
         with:
-          test-name: "Ej14 — Memoization"
+          test-name: "Ej14 — Memoization (TS)"
           command: "cd typescript && npx vitest run tests/ej14.test.ts"
           timeout: "10"
           max-score: "5"
@@ -145,7 +145,7 @@ jobs:
         id: ej04
         uses: classroom-resources/autograding-command-grader@v1
         with:
-          test-name: "Ej04 — Pipeline con ->>"
+          test-name: "Ej04 — Pipeline con ->> (Clj)"
           command: "cd clojure && lein test tp04.ej04-test"
           timeout: "10"
           max-score: "5"
@@ -154,7 +154,7 @@ jobs:
         id: ej07
         uses: classroom-resources/autograding-command-grader@v1
         with:
-          test-name: "Ej07 — Partial en Clojure"
+          test-name: "Ej07 — Partial en Clojure (Clj)"
           command: "cd clojure && lein test tp04.ej07-test"
           timeout: "10"
           max-score: "5"
@@ -163,7 +163,7 @@ jobs:
         id: ej09
         uses: classroom-resources/autograding-command-grader@v1
         with:
-          test-name: "Ej09 — Validadores currying"
+          test-name: "Ej09 — Validadores currying (Clj)"
           command: "cd clojure && lein test tp04.ej09-test"
           timeout: "10"
           max-score: "5"
@@ -172,7 +172,7 @@ jobs:
         id: ej12
         uses: classroom-resources/autograding-command-grader@v1
         with:
-          test-name: "Ej12 — Recursión de cola Clojure"
+          test-name: "Ej12 — Recursión de cola (Clj)"
           command: "cd clojure && lein test tp04.ej12-test"
           timeout: "10"
           max-score: "6"
@@ -181,7 +181,7 @@ jobs:
         id: ej15
         uses: classroom-resources/autograding-command-grader@v1
         with:
-          test-name: "Ej15 — Lazy sequences"
+          test-name: "Ej15 — Lazy sequences (Clj)"
           command: "cd clojure && lein test tp04.ej15-test"
           timeout: "10"
           max-score: "5"
@@ -190,7 +190,7 @@ jobs:
         id: ej16
         uses: classroom-resources/autograding-command-grader@v1
         with:
-          test-name: "Ej16 — DSL data-driven"
+          test-name: "Ej16 — DSL data-driven (Clj)"
           command: "cd clojure && lein test tp04.ej16-test"
           timeout: "10"
           max-score: "5"
