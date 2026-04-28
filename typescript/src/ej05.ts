@@ -5,15 +5,16 @@ export type UserWithRoles = { name: string; roles: string[] };
 
 // Extrae todos los roles de todos los usuarios (con duplicados).
 export function todosLosRoles(users: UserWithRoles[]): string[] {
-  throw new Error("TODO: implementar con flatMap");
+  return users.flatMap((user) => user.roles);
 }
 
 // Como el anterior pero sin duplicados.
 export function rolesUnicos(users: UserWithRoles[]): string[] {
-  throw new Error("TODO: implementar");
+  return [...new Set(users.flatMap((user) => user.roles))];
 }
 
 // Construye diccionario id → nombre con reduce.
 export function indexarPorId(items: { id: number; nombre: string }[]): Record<number, string> {
-  throw new Error("TODO: implementar con reduce");
+  return items.reduce((acc, item) => ({ ...acc, [item.id]: item.nombre }),
+    {} as Record<number, string>);
 }
